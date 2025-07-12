@@ -194,7 +194,7 @@ def create_dashboard(df):
 
 ########  Now we'll add the interactive streamlit pieces #####  --------------------------------------------------------------
 platform_options = gamesf['Platform_Maker']
-platform_choice = st.selectbox("Choose Platform Maker",platform_options)
+platform_choice = st.selectbox("Choose Platform Maker",platform_options).dropna().unique()
 
 min_year = int(gamesf['Year'].min())
 max_year = int(gamesf['Year'].max())
