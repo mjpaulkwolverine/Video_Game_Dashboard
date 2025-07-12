@@ -188,7 +188,8 @@ def create_dashboard(df):
         title="Region")
     )
     
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
+    #fig.show()
 
 
 
