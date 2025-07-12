@@ -197,7 +197,7 @@ platform_options = gamesf['Platform_Maker'].dropna().unique()
 platform_choice = st.selectbox("Choose Platform Maker",platform_options)
 
 min_year = int(gamesf['Year'].min())
-max_year = int(gamesf['Year'].max())
+max_year = int('2014')
 year_range = st.slider("Select Year Range", min_value = min_year, max_value = max_year, value=(min_year, max_year))
 
 filtered_df = gamesf[
