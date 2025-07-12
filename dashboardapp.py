@@ -1,6 +1,5 @@
 ##this cell is the python script I will save to be able to run in streamlit##
 
-import plotly
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
