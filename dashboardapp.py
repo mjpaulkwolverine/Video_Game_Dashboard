@@ -116,7 +116,8 @@ def create_dashboard(df):
     fig = make_subplots(
         rows=2, cols=3,
         subplot_titles=("Sales vs. Rating", "Avg Rating Buckets", "Top 5 Games by Sales","Sales by Genre", "Region Sales Donut", "Top 5 Publishers" ),
-        specs=[[{}, {},{}], [{}, {"type": "domain"},{}]]        
+        specs=[[{}, {},{}], [{}, {"type": "domain"},{}]],
+        horizontal_spacing = .1
     )
 
     # Scatter Plot creation
@@ -169,8 +170,8 @@ def create_dashboard(df):
 
     
     fig.update_layout(
-        height = 1500,
-        width = 1500,
+        height = 1200,
+        width = 1800,
         title_text= "Games Sales Dashboard",
         showlegend = True,
         barmode = 'stack'
