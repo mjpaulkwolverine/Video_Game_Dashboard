@@ -174,7 +174,8 @@ def create_dashboard(df):
         width = 1800,
         title_text= "Games Sales Dashboard",
         showlegend = True,
-        barmode = 'stack'
+        barmode = 'stack',
+        margin = dict(l=60,r=60,t=60,b=60),
     )
     ##i think we really only want the legend for the donut chart
     for i, trace in enumerate(fig.data):
